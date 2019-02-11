@@ -1,20 +1,95 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+  <!-- <div class="card-container"></div>
+  <form card
+  container=".card-container"
+  card-width="400"
+  [messages]="messages"
+  [placeholders]="placeholders"
+  [masks]="masks"
+  formatting="false"
+  debug="true">
+    <input type="text" name="number" card-number/>
+    <input type="text" name="first-name" card-name/>
+    <input type="text" name="last-name" card-name/>
+    <input type="text" name="expiry" card-expiry/>
+    <input type="text" name="cvc" card-cvc/>
 
+  
+</form>
+
+ -->
+ <main>
+  <article class="slds-card">
+    <div class="slds-card__header">
+      <header class="slds-grid slds-media slds-media_center slds-has-flexi-truncate slds-text-align_center">
+        <div class="slds-media__body">
+          <h2>
+            <div class="slds-card__header-link slds-truncate">
+              <span class="slds-text-heading_small">ngx-card</span>
+            </div>
+          </h2>
+        </div>
+      </header>
+      <div class="slds-text-align_center slds-m-bottom--small">
+        Angular 2+ wrapper for <a href="https://github.com/jessepollak/card">card.js</a>
+      </div>
+    </div>
+    <div class="slds-card__body slds-card__body_inner">
+      <div class="demo-container slds-border_top slds-border_bottom">
+        <div class="card-wrapper"></div>
+        <div class="form-container">
+          <form class="slds-form slds-form_compound" card container=".card-wrapper" action="javascript:void(0);">
+            <fieldset class="slds-form-element">
+              <div class="slds-form-element__group">
+                <div class="slds-form-element__row">
+                  <div class="slds-form-element">
+                    <input type="text" name="number" placeholder="Card number" class="slds-input" card-number/>
+                  </div>
+                </div>
+                <div class="slds-form-element__row">
+                  <div class=" slds-size_1-of-2">
+                    <div class="slds-form-element">
+                      <input type="text" name="first-name" placeholder="First name" class="slds-input" card-name/>
+                    </div>
+                  </div>
+                  <div class=" slds-size_1-of-2">
+                    <div class="slds-form-element">
+                      <input type="text" name="last-name" placeholder="Last name" class="slds-input" card-name/>
+                    </div>
+                  </div>
+                </div>
+                <div class="slds-form-element__row">
+                  <div class=" slds-size_1-of-2">
+                    <div class="slds-form-element">
+                      <input type="text" name="expiry" placeholder="MM/YY" class="slds-input" card-expiry/>
+                    </div>
+                  </div>
+                  <div class=" slds-size_1-of-2">
+                    <div class="slds-form-element">
+                      <input type="text" name="cvc" placeholder="CVC" class="slds-input" card-cvc/>
+                    </div>
+                  </div>
+                </div>
+                <div class="slds-form-element__row">
+                  <input type="submit" value="Submit" class="slds-size_1-of-1 slds-button slds-button--brand">
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="slds-card__footer">
+      <div class="slds-grid slds-grid_align-center">
+        <div class="slds-col slds-align-middle slds-no-flex">
+          <a href="https://www.npmjs.com/package/ngx-card" alt="NPM" title="Install with NPM">
+            <img src="img/npm.svg" style="height:15px; background:transparent;"/>
+          </a>
+          <a href="https://github.com/ihym/ngx-card" alt="Source" title="View Source" class="slds-m-left--small">
+            <img src="img/octicon.png" style="height:20px; background:transparent;"/>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </article>
+</main>
